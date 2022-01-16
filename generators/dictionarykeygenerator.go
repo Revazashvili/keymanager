@@ -8,7 +8,7 @@ import (
 
 const (
 	dictKeyInsertTemplate = `{{range . }} 
-INSERT INTO CIB_DICTIONARY_KEYS (KEY_NAME,KEY_DESCRIPTION,TOOLTIP,KEY_TYPE) VALUES('{{.KeyName}}','{{.KeyDescription}}','{{.TooltipKey}}','{{.KeyType}}');{{end}}`
+INSERT INTO CIB_DICTIONARY_KEYS (KEY_NAME,KEY_DESCRIPTION,TOOLTIP_KEY,KEY_TYPE) VALUES('{{.KeyName}}','{{.KeyDescription}}','{{.TooltipKey}}','{{.KeyType}}');{{end}}`
 )
 
 type DictionaryKeyGenerator struct {
