@@ -1,4 +1,4 @@
-package models
+package keymanager
 
 type DictionaryKey struct {
 	KeyName        string
