@@ -44,10 +44,8 @@ var generateCmd = &cobra.Command{
 	Short: "command to generate queries.",
 	Long:  `command to generate queries to insert test environment ready data into production database for tables CIB_DICTIONARY_KEYS and CIB_DICTIONARY.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		sw, err := cmd.Flags().GetString(prefix) //TODO: use this prefix to retrieve data from database
+		_, err := cmd.Flags().GetString(prefix) //TODO: use this prefix to retrieve data from database
 		keymanager.CheckErr(err)
-
-		fmt.Println(sw)
 
 		l := getLocation(cmd)
 
